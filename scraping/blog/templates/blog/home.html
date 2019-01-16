@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <form method="post">
+        <h1>Recherche</h1>
+        <p>Url du site</p>
+
+        <!--<select name="site" size="1">
+            <option></option>
+            <option value="http://www.ffbb.com/jouer/trouver-un-club?DepartementClub=45">ffbb</option>
+            <option value="https://www.lacompagniedescgpi.fr/annuaire-des-membres/">La compagnie des cgpi</option>
+            <option value="https://www.annuaire-gestion-patrimoine.com/cgpi">Annuaire gestion patrimoine</option>
+            <option value="https://www.architectes-pour-tous.fr/">Architectes pour tous</option>
+            <option value="https://annuaire.architectes.org/">Annuaire architectes</option>
+            <option value="https://annuaire.huissier-justice.fr/default.aspx">Annuaire huissier justice</option>
+            <option value="https://annuaire.experts-comptables.org/">Annuaire experts comptables</option>
+            <option value="http://www.avocats.paris/annuaire">Avocats Paris</option>
+            <option value="https://www.barreau-marseille.avocat.fr/fr/">Barreau Marseille avocat</option>
+            <option value="https://www.barreaudeversailles.com/annuaire">Barreau de Versailles</option>
+            <option value="http://www.annuaire-decideur.com/?code=decideur">Annuaire decideur</option>
+            <option value="https://www.pagesjaunes.fr/">Page Jaunes</option>
+        </select></br></br>-->
+        {% csrf_token %}
+        {{ form }}
+        </br></br>
+
+        <input type="submit" value="Valider">
+    </form>
+{% endblock content %}

@@ -1,0 +1,9 @@
+{
+  "name": "Steve_Gates",
+  "description": "Outil de scrappings",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "views.py"
+  }
+}

@@ -1,0 +1,112 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1>Resultat</h1>
+{#    <table>#}
+{#        <tr>#}
+{#            <th>Emails</th>#}
+{#            <th>Phones</th>#}
+{#            <th>Locations</th>#}
+{#            <th>Zip Codes</th>#}
+{#            <th>Urls</th>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td>#}
+{#                {% for info in infos.email %}#}
+{#                    <p>{{ info }}</p>#}
+{##}
+{#                {% endfor %}#}
+{#            </td>#}
+{#            <td>#}
+{#                {% for info in infos.phone %}#}
+{#                    <p>{{ info }}</p>#}
+{##}
+{#                {% endfor %}#}
+{##}
+{#            </td>#}
+{#            <td>#}
+{#                {% for info in infos.location %}#}
+{#                    <p>{{ info }}</p>#}
+{##}
+{#                {% endfor %}#}
+{##}
+{#            </td>#}
+{#            <td>#}
+{#                {% for info in infos.zip %}#}
+{#                    <p>{{ info }}</p>#}
+{##}
+{#                {% endfor %}#}
+{##}
+{#            </td>#}
+{#            <td>#}
+{#                {% for info in infos.web %}#}
+{#                    <p>{{ info }}</p>#}
+{##}
+{#                {% endfor %}#}
+{##}
+{#            </td>#}
+{#        </tr>#}
+{#    </table>#}
+    <span style="display: flex;"><table class="table" style="margin-right: 10px;">
+        <tr>
+            <thead class="thead-dark">
+            <th>Emails</th>
+            </thead>
+        </tr>
+        {% for email in infos.email %}
+            <tr>
+                <td><p> {{ email }} </p></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <table class="table" style="margin-right: 10px;">
+        <tr>
+            <thead class="thead-dark">
+            <th>Phones</th>
+            </thead>
+        </tr>
+        {% for phone in infos.phone %}
+            <tr>
+                <td><p> {{ phone }} </p></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <table class="table" style="margin-right: 10px;">
+        <tr>
+            <thead class="thead-dark">
+            <th>Locations</th>
+            </thead>
+        </tr>
+        {% for location in infos.location %}
+            <tr>
+                <td><p> {{ location }} </p></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <table class="table" style="margin-right: 10px;">
+        <tr>
+            <thead class="thead-dark">
+            <th>Zip codes</th>
+            </thead>
+        </tr>
+        {% for zip in infos.zip %}
+            <tr>
+                <td><p> {{ zip }} </p></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <table class="table" style="margin-right: 10px;">
+        <tr>
+            <thead class="thead-dark">
+            <th>Urls</th>
+            </thead>
+        </tr>
+        {% for web in infos.web %}
+            <tr>
+                <td><p> {{ web }} </p></td>
+            </tr>
+        {% endfor %}
+    </table>
+    </span>
+
+
+{% endblock content %}
